@@ -1,0 +1,589 @@
+[INFO] 2026-11-02 23:00:12,775 views | Entered index view with method=GET
+[INFO] 2026-11-02 23:00:12,788 views | Exiting index view
+[INFO] 2026-11-02 23:00:26,564 views | Entered index view with method=POST
+[DEBUG] 2026-11-02 23:00:26,572 views | POST data: polygon_id=621599, migrate_to_azure=None, migrate_to_db=None, migrate_test_cases_to_db=None, difficulty=, selected_tags=[], new_tag=
+[DEBUG] 2026-11-02 23:00:26,573 views | All POST data: {'csrfmiddlewaretoken': ['p9pPsBa9LyDIkd6JnkRnShenEGNxLebrrx59O9fx6iAcK3y1Rlynlfj5d6SEY1uD'], 'problem_id': ['621599']}
+[INFO] 2026-11-02 23:00:26,573 views | Processing polygon_id=621599
+[DEBUG] 2026-11-02 23:00:26,588 views | db_problem=None
+[INFO] 2026-11-02 23:00:26,588 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-02 23:00:27,397 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-11-02 23:00:27,397 views | Polygon problem info: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-02 23:00:27,398 polygon_api | Downloading package for problem 621599
+[INFO] 2026-11-02 23:00:27,404 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-02 23:00:28,354 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-02 23:00:42,658 polygon_api | Successfully read problem.html content, length: 2283 characters
+[DEBUG] 2026-11-02 23:00:42,697 polygon_api | Cleaned up temporary directory: C:\Users\Nivi\AppData\Local\Temp\tmpj3hi15ia
+[DEBUG] 2026-11-02 23:00:42,698 views | Downloaded and extracted problem_html_content, length: 2283
+[INFO] 2026-11-02 23:00:42,698 views | Entered parse_problem_html with content length=2283
+[DEBUG] 2026-11-02 23:00:42,705 views | Extracted title=Even Pair Sums, legend length=231, input_format length=264, output_format length=91
+[INFO] 2026-11-02 23:00:42,705 views | Exiting parse_problem_html
+[DEBUG] 2026-11-02 23:00:42,705 views | Parsed html_data: {'title': 'Even Pair Sums', 'legend': '<p>You are given an array $$$A$$$ consisting of $$$N$$$ integers. Your task is to find the number of pairs of adjacent elements $$$(A_i, A_{i+1})$$$ (for $$$1 \\le i  \\lt  N$$$) whose sum ($$$A_i + A_{i+1}$$$) is an even number.</p>', 'input_format': '<p>The first line contains a single integer $$$N$$$ ($$$2 \\le N \\le 10^5$$$) — the number of elements in the array. The second line contains $$$N$$$ space-separated integers $$$A_1, A_2, \\dots, A_N$$$ ($$$-10^9 \\le A_i \\le 10^9$$$) — the elements of the array.</p>', 'output_format': '<p>Output a single integer representing the number of adjacent pairs whose sum is even.</p>', 'notes': '<p>For the first sample, the adjacent sums are: — $$$1 + 3 = 4$$$ (even) — $$$3 + 5 = 8$$$ (even) — $$$5 + 7 = 12$$$ (even) Total count is 3.</p>'}
+[INFO] 2026-11-02 23:00:42,706 polygon_api | Fetching all test cases for 621599, testset
+[INFO] 2026-11-02 23:00:44,993 polygon_api | Found 12 test cases to process
+[INFO] 2026-11-02 23:00:44,993 polygon_api | Processing test case 1/12 (index: 1)
+[DEBUG] 2026-11-02 23:00:44,993 polygon_api | Fetching input for test case 1
+[DEBUG] 2026-11-02 23:00:47,095 polygon_api | Fetching output for test case 1
+[INFO] 2026-11-02 23:00:49,475 polygon_api | Successfully fetched test case 1 - Input length: 13, Output length: 3
+[INFO] 2026-11-02 23:00:49,475 polygon_api | Processing test case 2/12 (index: 2)
+[DEBUG] 2026-11-02 23:00:49,476 polygon_api | Fetching input for test case 2
+[DEBUG] 2026-11-02 23:00:51,085 polygon_api | Fetching output for test case 2
+[INFO] 2026-11-02 23:00:52,375 polygon_api | Successfully fetched test case 2 - Input length: 21, Output length: 3
+[INFO] 2026-11-02 23:00:52,375 polygon_api | Processing test case 3/12 (index: 3)
+[DEBUG] 2026-11-02 23:00:52,375 polygon_api | Fetching input for test case 3
+[DEBUG] 2026-11-02 23:00:53,635 polygon_api | Fetching output for test case 3
+[INFO] 2026-11-02 23:00:54,666 polygon_api | Successfully fetched test case 3 - Input length: 13, Output length: 3
+[INFO] 2026-11-02 23:00:54,666 polygon_api | Processing test case 4/12 (index: 4)
+[DEBUG] 2026-11-02 23:00:54,667 polygon_api | Fetching input for test case 4
+[DEBUG] 2026-11-02 23:00:55,815 polygon_api | Fetching output for test case 4
+[INFO] 2026-11-02 23:01:17,963 polygon_api | Successfully fetched test case 4 - Input length: 38, Output length: 3
+[INFO] 2026-11-02 23:01:17,963 polygon_api | Processing test case 5/12 (index: 5)
+[DEBUG] 2026-11-02 23:01:17,963 polygon_api | Fetching input for test case 5
+[DEBUG] 2026-11-02 23:01:19,180 polygon_api | Fetching output for test case 5
+[INFO] 2026-11-02 23:01:20,321 polygon_api | Successfully fetched test case 5 - Input length: 438, Output length: 4
+[INFO] 2026-11-02 23:01:20,321 polygon_api | Processing test case 6/12 (index: 6)
+[DEBUG] 2026-11-02 23:01:20,321 polygon_api | Fetching input for test case 6
+[DEBUG] 2026-11-02 23:01:21,605 polygon_api | Fetching output for test case 6
+[INFO] 2026-11-02 23:01:23,587 polygon_api | Successfully fetched test case 6 - Input length: 5410, Output length: 5
+[INFO] 2026-11-02 23:01:23,588 polygon_api | Processing test case 7/12 (index: 7)
+[DEBUG] 2026-11-02 23:01:23,588 polygon_api | Fetching input for test case 7
+[DEBUG] 2026-11-02 23:01:25,109 polygon_api | Fetching output for test case 7
+[INFO] 2026-11-02 23:01:26,076 polygon_api | Successfully fetched test case 7 - Input length: 31937, Output length: 6
+[INFO] 2026-11-02 23:01:26,078 polygon_api | Processing test case 8/12 (index: 8)
+[DEBUG] 2026-11-02 23:01:26,078 polygon_api | Fetching input for test case 8
+[DEBUG] 2026-11-02 23:01:49,238 polygon_api | Fetching output for test case 8
+[INFO] 2026-11-02 23:01:50,339 polygon_api | Successfully fetched test case 8 - Input length: 73859, Output length: 6
+[INFO] 2026-11-02 23:01:50,340 polygon_api | Processing test case 9/12 (index: 9)
+[DEBUG] 2026-11-02 23:01:50,340 polygon_api | Fetching input for test case 9
+[DEBUG] 2026-11-02 23:01:52,104 polygon_api | Fetching output for test case 9
+[INFO] 2026-11-02 23:01:53,475 polygon_api | Successfully fetched test case 9 - Input length: 209968, Output length: 7
+[INFO] 2026-11-02 23:01:53,477 polygon_api | Processing test case 10/12 (index: 10)
+[DEBUG] 2026-11-02 23:01:53,478 polygon_api | Fetching input for test case 10
+[DEBUG] 2026-11-02 23:01:55,889 polygon_api | Fetching output for test case 10
+[INFO] 2026-11-02 23:01:56,675 polygon_api | Successfully fetched test case 10 - Input length: 469410, Output length: 7
+[INFO] 2026-11-02 23:01:56,676 polygon_api | Processing test case 11/12 (index: 11)
+[DEBUG] 2026-11-02 23:01:56,676 polygon_api | Fetching input for test case 11
+[DEBUG] 2026-11-02 23:01:58,381 polygon_api | Fetching output for test case 11
+[INFO] 2026-11-02 23:01:59,255 polygon_api | Successfully fetched test case 11 - Input length: 770633, Output length: 7
+[INFO] 2026-11-02 23:01:59,256 polygon_api | Processing test case 12/12 (index: 12)
+[DEBUG] 2026-11-02 23:01:59,256 polygon_api | Fetching input for test case 12
+[DEBUG] 2026-11-02 23:02:02,606 polygon_api | Fetching output for test case 12
+[INFO] 2026-11-02 23:02:04,269 polygon_api | Successfully fetched test case 12 - Input length: 1038893, Output length: 7
+[INFO] 2026-11-02 23:02:04,270 polygon_api | Completed fetching all 12 test cases for problem 621599
+[DEBUG] 2026-11-02 23:02:04,271 views | Fetched all test cases.
+[ERROR] 2026-11-02 23:02:04,276 polygon_api | Error storing test cases in Redis for polygon_id 621599: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+[DEBUG] 2026-11-02 23:02:04,756 views | checker_type=checker.cpp
+[INFO] 2026-11-02 23:02:04,757 polygon_api | Fetching custom checker info for problem 621599
+[DEBUG] 2026-11-02 23:02:05,224 polygon_api | Raw checker info: checker.cpp
+[INFO] 2026-11-02 23:02:05,224 polygon_api | Custom checker detected: {'name': 'checker.cpp', 'type': 'custom'}
+[INFO] 2026-11-02 23:02:05,225 polygon_api | Fetching test cases for 621599, testset
+[DEBUG] 2026-11-02 23:02:05,733 views | test_case_count=12
+[INFO] 2026-11-02 23:02:05,734 views | Exiting index view
+[INFO] 2026-11-02 23:02:24,813 views | Entered index view with method=POST
+[DEBUG] 2026-11-02 23:02:24,817 views | POST data: polygon_id=621599, migrate_to_azure=None, migrate_to_db=1, migrate_test_cases_to_db=None, difficulty=easy, selected_tags=[], new_tag=
+[DEBUG] 2026-11-02 23:02:24,817 views | All POST data: {'csrfmiddlewaretoken': ['7DMxSS5tC1P7f06cg093rgIoaUO55nzp91sReqaRXLMBFQyuK1Q3UeN6JkTciaSB'], 'problem_id': ['621599'], 'migrate_to_db': ['1'], 'difficulty': ['easy']}
+[INFO] 2026-11-02 23:02:24,817 views | Processing polygon_id=621599
+[DEBUG] 2026-11-02 23:02:24,825 views | db_problem=None
+[INFO] 2026-11-02 23:02:24,826 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-02 23:02:25,531 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-11-02 23:02:25,532 views | Polygon problem info: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-02 23:02:25,532 polygon_api | Downloading package for problem 621599
+[INFO] 2026-11-02 23:02:25,534 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-02 23:02:26,051 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-02 23:02:28,913 polygon_api | Successfully read problem.html content, length: 2283 characters
+[DEBUG] 2026-11-02 23:02:28,964 polygon_api | Cleaned up temporary directory: C:\Users\Nivi\AppData\Local\Temp\tmp29m08gtt
+[DEBUG] 2026-11-02 23:02:28,965 views | Downloaded and extracted problem_html_content, length: 2283
+[INFO] 2026-11-02 23:02:28,965 views | Entered parse_problem_html with content length=2283
+[DEBUG] 2026-11-02 23:02:28,967 views | Extracted title=Even Pair Sums, legend length=231, input_format length=264, output_format length=91
+[INFO] 2026-11-02 23:02:28,968 views | Exiting parse_problem_html
+[DEBUG] 2026-11-02 23:02:28,968 views | Parsed html_data: {'title': 'Even Pair Sums', 'legend': '<p>You are given an array $$$A$$$ consisting of $$$N$$$ integers. Your task is to find the number of pairs of adjacent elements $$$(A_i, A_{i+1})$$$ (for $$$1 \\le i  \\lt  N$$$) whose sum ($$$A_i + A_{i+1}$$$) is an even number.</p>', 'input_format': '<p>The first line contains a single integer $$$N$$$ ($$$2 \\le N \\le 10^5$$$) — the number of elements in the array. The second line contains $$$N$$$ space-separated integers $$$A_1, A_2, \\dots, A_N$$$ ($$$-10^9 \\le A_i \\le 10^9$$$) — the elements of the array.</p>', 'output_format': '<p>Output a single integer representing the number of adjacent pairs whose sum is even.</p>', 'notes': '<p>For the first sample, the adjacent sums are: — $$$1 + 3 = 4$$$ (even) — $$$3 + 5 = 8$$$ (even) — $$$5 + 7 = 12$$$ (even) Total count is 3.</p>'}
+[ERROR] 2026-11-02 23:02:28,968 polygon_api | Error retrieving test cases from Redis for polygon_id 621599: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+[WARNING] 2026-11-02 23:02:28,968 views | Test cases not found in Redis, fetching from Polygon
+[INFO] 2026-11-02 23:02:28,968 polygon_api | Fetching all test cases for 621599, testset
+[INFO] 2026-11-02 23:02:29,636 polygon_api | Found 12 test cases to process
+[INFO] 2026-11-02 23:02:29,636 polygon_api | Processing test case 1/12 (index: 1)
+[DEBUG] 2026-11-02 23:02:29,637 polygon_api | Fetching input for test case 1
+[DEBUG] 2026-11-02 23:02:30,276 polygon_api | Fetching output for test case 1
+[INFO] 2026-11-02 23:02:30,927 polygon_api | Successfully fetched test case 1 - Input length: 13, Output length: 3
+[INFO] 2026-11-02 23:02:30,927 polygon_api | Processing test case 2/12 (index: 2)
+[DEBUG] 2026-11-02 23:02:30,928 polygon_api | Fetching input for test case 2
+[DEBUG] 2026-11-02 23:02:31,557 polygon_api | Fetching output for test case 2
+[INFO] 2026-11-02 23:02:32,516 polygon_api | Successfully fetched test case 2 - Input length: 21, Output length: 3
+[INFO] 2026-11-02 23:02:32,516 polygon_api | Processing test case 3/12 (index: 3)
+[DEBUG] 2026-11-02 23:02:32,517 polygon_api | Fetching input for test case 3
+[DEBUG] 2026-11-02 23:02:33,180 polygon_api | Fetching output for test case 3
+[INFO] 2026-11-02 23:02:33,849 polygon_api | Successfully fetched test case 3 - Input length: 13, Output length: 3
+[INFO] 2026-11-02 23:02:33,850 polygon_api | Processing test case 4/12 (index: 4)
+[DEBUG] 2026-11-02 23:02:33,850 polygon_api | Fetching input for test case 4
+[DEBUG] 2026-11-02 23:02:35,076 polygon_api | Fetching output for test case 4
+[INFO] 2026-11-02 23:02:35,710 polygon_api | Successfully fetched test case 4 - Input length: 38, Output length: 3
+[INFO] 2026-11-02 23:02:35,711 polygon_api | Processing test case 5/12 (index: 5)
+[DEBUG] 2026-11-02 23:02:35,711 polygon_api | Fetching input for test case 5
+[DEBUG] 2026-11-02 23:02:36,675 polygon_api | Fetching output for test case 5
+[INFO] 2026-11-02 23:02:37,325 polygon_api | Successfully fetched test case 5 - Input length: 438, Output length: 4
+[INFO] 2026-11-02 23:02:37,326 polygon_api | Processing test case 6/12 (index: 6)
+[DEBUG] 2026-11-02 23:02:37,326 polygon_api | Fetching input for test case 6
+[DEBUG] 2026-11-02 23:02:38,275 polygon_api | Fetching output for test case 6
+[INFO] 2026-11-02 23:02:38,913 polygon_api | Successfully fetched test case 6 - Input length: 5410, Output length: 5
+[INFO] 2026-11-02 23:02:38,914 polygon_api | Processing test case 7/12 (index: 7)
+[DEBUG] 2026-11-02 23:02:38,914 polygon_api | Fetching input for test case 7
+[DEBUG] 2026-11-02 23:02:40,199 polygon_api | Fetching output for test case 7
+[INFO] 2026-11-02 23:02:40,836 polygon_api | Successfully fetched test case 7 - Input length: 31937, Output length: 6
+[INFO] 2026-11-02 23:02:40,837 polygon_api | Processing test case 8/12 (index: 8)
+[DEBUG] 2026-11-02 23:02:40,837 polygon_api | Fetching input for test case 8
+[DEBUG] 2026-11-02 23:02:41,808 polygon_api | Fetching output for test case 8
+[INFO] 2026-11-02 23:02:42,437 polygon_api | Successfully fetched test case 8 - Input length: 73859, Output length: 6
+[INFO] 2026-11-02 23:02:42,437 polygon_api | Processing test case 9/12 (index: 9)
+[DEBUG] 2026-11-02 23:02:42,437 polygon_api | Fetching input for test case 9
+[DEBUG] 2026-11-02 23:02:43,461 polygon_api | Fetching output for test case 9
+[INFO] 2026-11-02 23:02:44,354 polygon_api | Successfully fetched test case 9 - Input length: 209968, Output length: 7
+[INFO] 2026-11-02 23:02:44,354 polygon_api | Processing test case 10/12 (index: 10)
+[DEBUG] 2026-11-02 23:02:44,355 polygon_api | Fetching input for test case 10
+[DEBUG] 2026-11-02 23:02:45,491 polygon_api | Fetching output for test case 10
+[INFO] 2026-11-02 23:02:46,274 polygon_api | Successfully fetched test case 10 - Input length: 469410, Output length: 7
+[INFO] 2026-11-02 23:02:46,275 polygon_api | Processing test case 11/12 (index: 11)
+[DEBUG] 2026-11-02 23:02:46,275 polygon_api | Fetching input for test case 11
+[DEBUG] 2026-11-02 23:02:47,425 polygon_api | Fetching output for test case 11
+[INFO] 2026-11-02 23:02:48,195 polygon_api | Successfully fetched test case 11 - Input length: 770633, Output length: 7
+[INFO] 2026-11-02 23:02:48,196 polygon_api | Processing test case 12/12 (index: 12)
+[DEBUG] 2026-11-02 23:02:48,197 polygon_api | Fetching input for test case 12
+[DEBUG] 2026-11-02 23:02:49,254 polygon_api | Fetching output for test case 12
+[INFO] 2026-11-02 23:02:49,966 polygon_api | Successfully fetched test case 12 - Input length: 1038893, Output length: 7
+[INFO] 2026-11-02 23:02:49,967 polygon_api | Completed fetching all 12 test cases for problem 621599
+[ERROR] 2026-11-02 23:02:49,967 polygon_api | Error storing test cases in Redis for polygon_id 621599: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+[DEBUG] 2026-11-02 23:02:50,782 views | checker_type=checker.cpp
+[INFO] 2026-11-02 23:02:50,783 polygon_api | Fetching custom checker info for problem 621599
+[DEBUG] 2026-11-02 23:02:51,579 polygon_api | Raw checker info: checker.cpp
+[INFO] 2026-11-02 23:02:51,580 polygon_api | Custom checker detected: {'name': 'checker.cpp', 'type': 'custom'}
+[INFO] 2026-11-02 23:02:51,580 polygon_api | Fetching test cases for 621599, testset
+[DEBUG] 2026-11-02 23:02:52,363 views | test_case_count=12
+[INFO] 2026-11-02 23:02:52,363 views | Starting DB migration for polygon_id=621599
+[INFO] 2026-11-02 23:02:52,368 views | Creating new Problem in DB
+[INFO] 2026-11-02 23:02:52,395 views | Processing tags for problem
+[DEBUG] 2026-11-02 23:02:52,395 views | Selected tags before processing: []
+[DEBUG] 2026-11-02 23:02:52,395 views | New tag before processing: 
+[DEBUG] 2026-11-02 23:02:52,412 views | Cleared existing tags for problem 1
+[DEBUG] 2026-11-02 23:02:52,414 views | Final tags after processing: []
+[ERROR] 2026-11-02 23:02:52,415 polygon_api | Error retrieving test cases from Redis for polygon_id 621599: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+[WARNING] 2026-11-02 23:02:52,415 views | Test cases not found in Redis, fetching from Polygon
+[INFO] 2026-11-02 23:02:52,415 polygon_api | Fetching all test cases for 621599, testset
+[INFO] 2026-11-02 23:02:53,182 polygon_api | Found 12 test cases to process
+[INFO] 2026-11-02 23:02:53,182 polygon_api | Processing test case 1/12 (index: 1)
+[DEBUG] 2026-11-02 23:02:53,182 polygon_api | Fetching input for test case 1
+[DEBUG] 2026-11-02 23:02:54,915 polygon_api | Fetching output for test case 1
+[INFO] 2026-11-02 23:02:55,783 polygon_api | Successfully fetched test case 1 - Input length: 13, Output length: 3
+[INFO] 2026-11-02 23:02:55,784 polygon_api | Processing test case 2/12 (index: 2)
+[DEBUG] 2026-11-02 23:02:55,785 polygon_api | Fetching input for test case 2
+[DEBUG] 2026-11-02 23:02:56,652 polygon_api | Fetching output for test case 2
+[INFO] 2026-11-02 23:02:57,797 polygon_api | Successfully fetched test case 2 - Input length: 21, Output length: 3
+[INFO] 2026-11-02 23:02:57,797 polygon_api | Processing test case 3/12 (index: 3)
+[DEBUG] 2026-11-02 23:02:57,798 polygon_api | Fetching input for test case 3
+[DEBUG] 2026-11-02 23:02:59,075 polygon_api | Fetching output for test case 3
+[INFO] 2026-11-02 23:03:00,034 polygon_api | Successfully fetched test case 3 - Input length: 13, Output length: 3
+[INFO] 2026-11-02 23:03:00,035 polygon_api | Processing test case 4/12 (index: 4)
+[DEBUG] 2026-11-02 23:03:00,037 polygon_api | Fetching input for test case 4
+[DEBUG] 2026-11-02 23:03:21,708 polygon_api | Fetching output for test case 4
+[INFO] 2026-11-02 23:03:22,567 polygon_api | Successfully fetched test case 4 - Input length: 38, Output length: 3
+[INFO] 2026-11-02 23:03:22,568 polygon_api | Processing test case 5/12 (index: 5)
+[DEBUG] 2026-11-02 23:03:22,568 polygon_api | Fetching input for test case 5
+[DEBUG] 2026-11-02 23:03:24,101 polygon_api | Fetching output for test case 5
+[INFO] 2026-11-02 23:03:25,055 polygon_api | Successfully fetched test case 5 - Input length: 438, Output length: 4
+[INFO] 2026-11-02 23:03:25,056 polygon_api | Processing test case 6/12 (index: 6)
+[DEBUG] 2026-11-02 23:03:25,057 polygon_api | Fetching input for test case 6
+[DEBUG] 2026-11-02 23:03:26,175 polygon_api | Fetching output for test case 6
+[INFO] 2026-11-02 23:03:27,235 polygon_api | Successfully fetched test case 6 - Input length: 5410, Output length: 5
+[INFO] 2026-11-02 23:03:27,237 polygon_api | Processing test case 7/12 (index: 7)
+[DEBUG] 2026-11-02 23:03:27,239 polygon_api | Fetching input for test case 7
+[DEBUG] 2026-11-02 23:03:28,403 polygon_api | Fetching output for test case 7
+[INFO] 2026-11-02 23:03:29,475 polygon_api | Successfully fetched test case 7 - Input length: 31937, Output length: 6
+[INFO] 2026-11-02 23:03:29,475 polygon_api | Processing test case 8/12 (index: 8)
+[DEBUG] 2026-11-02 23:03:29,476 polygon_api | Fetching input for test case 8
+[DEBUG] 2026-11-02 23:03:30,618 polygon_api | Fetching output for test case 8
+[INFO] 2026-11-02 23:03:31,658 polygon_api | Successfully fetched test case 8 - Input length: 73859, Output length: 6
+[INFO] 2026-11-02 23:03:31,659 polygon_api | Processing test case 9/12 (index: 9)
+[DEBUG] 2026-11-02 23:03:31,659 polygon_api | Fetching input for test case 9
+[DEBUG] 2026-11-02 23:03:33,489 polygon_api | Fetching output for test case 9
+[INFO] 2026-11-02 23:03:34,464 polygon_api | Successfully fetched test case 9 - Input length: 209968, Output length: 7
+[INFO] 2026-11-02 23:03:34,464 polygon_api | Processing test case 10/12 (index: 10)
+[DEBUG] 2026-11-02 23:03:34,464 polygon_api | Fetching input for test case 10
+[DEBUG] 2026-11-02 23:03:38,437 polygon_api | Fetching output for test case 10
+[INFO] 2026-11-02 23:03:40,355 polygon_api | Successfully fetched test case 10 - Input length: 469410, Output length: 7
+[INFO] 2026-11-02 23:03:40,356 polygon_api | Processing test case 11/12 (index: 11)
+[DEBUG] 2026-11-02 23:03:40,356 polygon_api | Fetching input for test case 11
+[DEBUG] 2026-11-02 23:03:43,293 polygon_api | Fetching output for test case 11
+[INFO] 2026-11-02 23:03:46,114 polygon_api | Successfully fetched test case 11 - Input length: 770633, Output length: 7
+[INFO] 2026-11-02 23:03:46,114 polygon_api | Processing test case 12/12 (index: 12)
+[DEBUG] 2026-11-02 23:03:46,115 polygon_api | Fetching input for test case 12
+[DEBUG] 2026-11-02 23:03:49,688 polygon_api | Fetching output for test case 12
+[INFO] 2026-11-02 23:03:51,044 polygon_api | Successfully fetched test case 12 - Input length: 1038893, Output length: 7
+[INFO] 2026-11-02 23:03:51,045 polygon_api | Completed fetching all 12 test cases for problem 621599
+[ERROR] 2026-11-02 23:03:51,046 polygon_api | Error storing test cases in Redis for polygon_id 621599: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+[DEBUG] 2026-11-02 23:03:51,046 views | test_cases for DB migration.
+[DEBUG] 2026-11-02 23:03:51,046 views | sample_tests: []
+[DEBUG] 2026-11-02 23:03:53,164 views | Fetched solutions: [{'name': 'solution.cpp', 'modificationTimeSeconds': 1793637839, 'length': 470, 'tag': 'MA', 'sourceType': 'cpp.gcc14-64-msys2-g++23'}]
+[INFO] 2026-11-02 23:03:53,881 views | Exiting index view
+[INFO] 2026-11-03 09:38:53,433 views | Entered index view with method=GET
+[INFO] 2026-11-03 09:38:53,441 views | Exiting index view
+[INFO] 2026-11-03 09:40:42,860 views | Entered index view with method=POST
+[DEBUG] 2026-11-03 09:40:42,876 views | POST data: polygon_id=621599, migrate_to_azure=None, migrate_to_db=None, migrate_test_cases_to_db=None, difficulty=, selected_tags=[], new_tag=
+[DEBUG] 2026-11-03 09:40:42,878 views | All POST data: {'csrfmiddlewaretoken': ['E6QxAjoEXuOunocDWJRTwmcNoxIMci7GmzFI33bhF6AIV4i0e65kl0bZenuBmPma'], 'problem_id': ['621599']}
+[INFO] 2026-11-03 09:40:42,878 views | Processing polygon_id=621599
+[DEBUG] 2026-11-03 09:40:42,897 views | db_problem=None
+[INFO] 2026-11-03 09:40:42,899 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-03 09:40:46,829 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-11-03 09:40:46,830 views | Polygon problem info: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-03 09:40:46,832 polygon_api | Downloading package for problem 621599
+[INFO] 2026-11-03 09:40:46,839 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-03 09:40:47,634 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-03 09:40:57,699 polygon_api | Successfully read problem.html content, length: 2283 characters
+[DEBUG] 2026-11-03 09:40:57,811 polygon_api | Cleaned up temporary directory: C:\Users\Nivi\AppData\Local\Temp\tmp819jol7q
+[DEBUG] 2026-11-03 09:40:57,814 views | Downloaded and extracted problem_html_content, length: 2283
+[INFO] 2026-11-03 09:40:57,814 views | Entered parse_problem_html with content length=2283
+[DEBUG] 2026-11-03 09:40:57,824 views | Extracted title=Even Pair Sums, legend length=231, input_format length=264, output_format length=91
+[INFO] 2026-11-03 09:40:57,824 views | Exiting parse_problem_html
+[DEBUG] 2026-11-03 09:40:57,825 views | Parsed html_data: {'title': 'Even Pair Sums', 'legend': '<p>You are given an array $$$A$$$ consisting of $$$N$$$ integers. Your task is to find the number of pairs of adjacent elements $$$(A_i, A_{i+1})$$$ (for $$$1 \\le i  \\lt  N$$$) whose sum ($$$A_i + A_{i+1}$$$) is an even number.</p>', 'input_format': '<p>The first line contains a single integer $$$N$$$ ($$$2 \\le N \\le 10^5$$$) — the number of elements in the array. The second line contains $$$N$$$ space-separated integers $$$A_1, A_2, \\dots, A_N$$$ ($$$-10^9 \\le A_i \\le 10^9$$$) — the elements of the array.</p>', 'output_format': '<p>Output a single integer representing the number of adjacent pairs whose sum is even.</p>', 'notes': '<p>For the first sample, the adjacent sums are: — $$$1 + 3 = 4$$$ (even) — $$$3 + 5 = 8$$$ (even) — $$$5 + 7 = 12$$$ (even) Total count is 3.</p>'}
+[INFO] 2026-11-03 09:40:57,827 polygon_api | Fetching all test cases for 621599, testset
+[INFO] 2026-11-03 09:40:58,556 polygon_api | Found 12 test cases to process
+[INFO] 2026-11-03 09:40:58,556 polygon_api | Processing test case 1/12 (index: 1)
+[DEBUG] 2026-11-03 09:40:58,557 polygon_api | Fetching input for test case 1
+[WARNING] 2026-11-03 09:42:09,522 polygon_api | Error fetching test case 1: HTTP Request Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[INFO] 2026-11-03 09:42:09,612 polygon_api | Processing test case 2/12 (index: 2)
+[DEBUG] 2026-11-03 09:42:09,673 polygon_api | Fetching input for test case 2
+[WARNING] 2026-11-03 09:42:24,659 polygon_api | Error fetching test case 2: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.testInput (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019BFE7332D0>: Failed to establish a new connection: [WinError 10051] A socket operation was attempted to an unreachable network'))
+[INFO] 2026-11-03 09:42:24,684 polygon_api | Processing test case 3/12 (index: 3)
+[DEBUG] 2026-11-03 09:42:24,703 polygon_api | Fetching input for test case 3
+[WARNING] 2026-11-03 09:42:24,821 polygon_api | Error fetching test case 3: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.testInput (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE6BC250>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+[INFO] 2026-11-03 09:42:24,866 polygon_api | Processing test case 4/12 (index: 4)
+[DEBUG] 2026-11-03 09:42:24,878 polygon_api | Fetching input for test case 4
+[WARNING] 2026-11-03 09:42:24,912 polygon_api | Error fetching test case 4: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.testInput (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE6BEA90>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+[INFO] 2026-11-03 09:42:24,917 polygon_api | Processing test case 5/12 (index: 5)
+[DEBUG] 2026-11-03 09:42:24,920 polygon_api | Fetching input for test case 5
+[WARNING] 2026-11-03 09:42:24,925 polygon_api | Error fetching test case 5: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.testInput (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE6BE490>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+[INFO] 2026-11-03 09:42:24,926 polygon_api | Processing test case 6/12 (index: 6)
+[DEBUG] 2026-11-03 09:42:24,927 polygon_api | Fetching input for test case 6
+[WARNING] 2026-11-03 09:42:24,933 polygon_api | Error fetching test case 6: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.testInput (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE6BE410>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+[INFO] 2026-11-03 09:42:24,933 polygon_api | Processing test case 7/12 (index: 7)
+[DEBUG] 2026-11-03 09:42:24,934 polygon_api | Fetching input for test case 7
+[WARNING] 2026-11-03 09:42:24,941 polygon_api | Error fetching test case 7: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.testInput (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE6BFC90>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+[INFO] 2026-11-03 09:42:24,941 polygon_api | Processing test case 8/12 (index: 8)
+[DEBUG] 2026-11-03 09:42:24,942 polygon_api | Fetching input for test case 8
+[WARNING] 2026-11-03 09:42:24,947 polygon_api | Error fetching test case 8: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.testInput (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE6BE990>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+[INFO] 2026-11-03 09:42:24,948 polygon_api | Processing test case 9/12 (index: 9)
+[DEBUG] 2026-11-03 09:42:24,949 polygon_api | Fetching input for test case 9
+[WARNING] 2026-11-03 09:42:24,955 polygon_api | Error fetching test case 9: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.testInput (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE732A90>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+[INFO] 2026-11-03 09:42:24,955 polygon_api | Processing test case 10/12 (index: 10)
+[DEBUG] 2026-11-03 09:42:24,956 polygon_api | Fetching input for test case 10
+[WARNING] 2026-11-03 09:42:24,959 polygon_api | Error fetching test case 10: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.testInput (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE732490>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+[INFO] 2026-11-03 09:42:24,960 polygon_api | Processing test case 11/12 (index: 11)
+[DEBUG] 2026-11-03 09:42:24,960 polygon_api | Fetching input for test case 11
+[WARNING] 2026-11-03 09:42:24,967 polygon_api | Error fetching test case 11: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.testInput (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE604090>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+[INFO] 2026-11-03 09:42:24,968 polygon_api | Processing test case 12/12 (index: 12)
+[DEBUG] 2026-11-03 09:42:24,968 polygon_api | Fetching input for test case 12
+[WARNING] 2026-11-03 09:42:24,973 polygon_api | Error fetching test case 12: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.testInput (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE46EC10>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+[INFO] 2026-11-03 09:42:24,974 polygon_api | Completed fetching all 12 test cases for problem 621599
+[DEBUG] 2026-11-03 09:42:24,974 views | Fetched all test cases.
+[ERROR] 2026-11-03 09:42:24,987 polygon_api | Error storing test cases in Redis for polygon_id 621599: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+[ERROR] 2026-11-03 09:42:24,999 views | Exception in index view: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.checker (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE733F90>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+Traceback (most recent call last):
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000019BFE733F90>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.checker (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE733F90>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nivi\Music\Polygon-migration-assignment\PolygonMigration\problems\polygon_api.py", line 96, in _make_request
+    response = requests.post(f"{self.API_URL}{method_name}", data=post_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nivi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.checker (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE733F90>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nivi\Music\Polygon-migration-assignment\PolygonMigration\problems\views.py", line 306, in index
+    checker_type = api._make_request('problem.checker', {'problemId': polygon_id}) or 'ncmp'
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nivi\Music\Polygon-migration-assignment\PolygonMigration\problems\polygon_api.py", line 114, in _make_request
+    raise Exception(f"HTTP Request Error: {e}")
+Exception: HTTP Request Error: HTTPSConnectionPool(host='polygon.codeforces.com', port=443): Max retries exceeded with url: /api/problem.checker (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019BFE733F90>: Failed to resolve 'polygon.codeforces.com' ([Errno 11001] getaddrinfo failed)"))
+[ERROR] 2026-11-03 09:42:25,327 polygon_api | Error clearing test cases from Redis for polygon_id 621599: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+[INFO] 2026-11-03 09:42:25,328 views | Exiting index view
+[INFO] 2026-11-03 09:43:35,372 views | Entered index view with method=POST
+[DEBUG] 2026-11-03 09:43:35,380 views | POST data: polygon_id=621599, migrate_to_azure=None, migrate_to_db=None, migrate_test_cases_to_db=None, difficulty=, selected_tags=[], new_tag=
+[DEBUG] 2026-11-03 09:43:35,380 views | All POST data: {'csrfmiddlewaretoken': ['E6QxAjoEXuOunocDWJRTwmcNoxIMci7GmzFI33bhF6AIV4i0e65kl0bZenuBmPma'], 'problem_id': ['621599']}
+[INFO] 2026-11-03 09:43:35,380 views | Processing polygon_id=621599
+[DEBUG] 2026-11-03 09:43:35,387 views | db_problem=None
+[INFO] 2026-11-03 09:43:35,387 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-03 09:43:36,246 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-11-03 09:43:36,246 views | Polygon problem info: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-03 09:43:36,246 polygon_api | Downloading package for problem 621599
+[INFO] 2026-11-03 09:43:36,247 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-03 09:43:37,253 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-03 09:43:42,073 polygon_api | Successfully read problem.html content, length: 2283 characters
+[DEBUG] 2026-11-03 09:43:42,131 polygon_api | Cleaned up temporary directory: C:\Users\Nivi\AppData\Local\Temp\tmp6_0eam1n
+[DEBUG] 2026-11-03 09:43:42,132 views | Downloaded and extracted problem_html_content, length: 2283
+[INFO] 2026-11-03 09:43:42,132 views | Entered parse_problem_html with content length=2283
+[DEBUG] 2026-11-03 09:43:42,134 views | Extracted title=Even Pair Sums, legend length=231, input_format length=264, output_format length=91
+[INFO] 2026-11-03 09:43:42,134 views | Exiting parse_problem_html
+[DEBUG] 2026-11-03 09:43:42,134 views | Parsed html_data: {'title': 'Even Pair Sums', 'legend': '<p>You are given an array $$$A$$$ consisting of $$$N$$$ integers. Your task is to find the number of pairs of adjacent elements $$$(A_i, A_{i+1})$$$ (for $$$1 \\le i  \\lt  N$$$) whose sum ($$$A_i + A_{i+1}$$$) is an even number.</p>', 'input_format': '<p>The first line contains a single integer $$$N$$$ ($$$2 \\le N \\le 10^5$$$) — the number of elements in the array. The second line contains $$$N$$$ space-separated integers $$$A_1, A_2, \\dots, A_N$$$ ($$$-10^9 \\le A_i \\le 10^9$$$) — the elements of the array.</p>', 'output_format': '<p>Output a single integer representing the number of adjacent pairs whose sum is even.</p>', 'notes': '<p>For the first sample, the adjacent sums are: — $$$1 + 3 = 4$$$ (even) — $$$3 + 5 = 8$$$ (even) — $$$5 + 7 = 12$$$ (even) Total count is 3.</p>'}
+[INFO] 2026-11-03 09:43:42,134 polygon_api | Fetching all test cases for 621599, testset
+[INFO] 2026-11-03 09:43:42,668 polygon_api | Found 12 test cases to process
+[INFO] 2026-11-03 09:43:42,668 polygon_api | Processing test case 1/12 (index: 1)
+[DEBUG] 2026-11-03 09:43:42,669 polygon_api | Fetching input for test case 1
+[DEBUG] 2026-11-03 09:43:43,347 polygon_api | Fetching output for test case 1
+[INFO] 2026-11-03 09:43:44,106 polygon_api | Successfully fetched test case 1 - Input length: 13, Output length: 3
+[INFO] 2026-11-03 09:43:44,108 polygon_api | Processing test case 2/12 (index: 2)
+[DEBUG] 2026-11-03 09:43:44,109 polygon_api | Fetching input for test case 2
+[DEBUG] 2026-11-03 09:43:46,222 polygon_api | Fetching output for test case 2
+[INFO] 2026-11-03 09:43:47,071 polygon_api | Successfully fetched test case 2 - Input length: 21, Output length: 3
+[INFO] 2026-11-03 09:43:47,072 polygon_api | Processing test case 3/12 (index: 3)
+[DEBUG] 2026-11-03 09:43:47,072 polygon_api | Fetching input for test case 3
+[DEBUG] 2026-11-03 09:43:48,985 polygon_api | Fetching output for test case 3
+[INFO] 2026-11-03 09:43:49,705 polygon_api | Successfully fetched test case 3 - Input length: 13, Output length: 3
+[INFO] 2026-11-03 09:43:49,705 polygon_api | Processing test case 4/12 (index: 4)
+[DEBUG] 2026-11-03 09:43:49,706 polygon_api | Fetching input for test case 4
+[DEBUG] 2026-11-03 09:43:51,967 polygon_api | Fetching output for test case 4
+[INFO] 2026-11-03 09:43:52,677 polygon_api | Successfully fetched test case 4 - Input length: 38, Output length: 3
+[INFO] 2026-11-03 09:43:52,677 polygon_api | Processing test case 5/12 (index: 5)
+[DEBUG] 2026-11-03 09:43:52,678 polygon_api | Fetching input for test case 5
+[DEBUG] 2026-11-03 09:43:54,510 polygon_api | Fetching output for test case 5
+[INFO] 2026-11-03 09:43:55,434 polygon_api | Successfully fetched test case 5 - Input length: 438, Output length: 4
+[INFO] 2026-11-03 09:43:55,435 polygon_api | Processing test case 6/12 (index: 6)
+[DEBUG] 2026-11-03 09:43:55,435 polygon_api | Fetching input for test case 6
+[DEBUG] 2026-11-03 09:43:57,893 polygon_api | Fetching output for test case 6
+[INFO] 2026-11-03 09:43:58,591 polygon_api | Successfully fetched test case 6 - Input length: 5410, Output length: 5
+[INFO] 2026-11-03 09:43:58,592 polygon_api | Processing test case 7/12 (index: 7)
+[DEBUG] 2026-11-03 09:43:58,592 polygon_api | Fetching input for test case 7
+[DEBUG] 2026-11-03 09:44:00,555 polygon_api | Fetching output for test case 7
+[INFO] 2026-11-03 09:44:01,229 polygon_api | Successfully fetched test case 7 - Input length: 31937, Output length: 6
+[INFO] 2026-11-03 09:44:01,232 polygon_api | Processing test case 8/12 (index: 8)
+[DEBUG] 2026-11-03 09:44:01,232 polygon_api | Fetching input for test case 8
+[DEBUG] 2026-11-03 09:44:03,424 polygon_api | Fetching output for test case 8
+[INFO] 2026-11-03 09:44:04,141 polygon_api | Successfully fetched test case 8 - Input length: 73859, Output length: 6
+[INFO] 2026-11-03 09:44:04,141 polygon_api | Processing test case 9/12 (index: 9)
+[DEBUG] 2026-11-03 09:44:04,144 polygon_api | Fetching input for test case 9
+[DEBUG] 2026-11-03 09:44:07,499 polygon_api | Fetching output for test case 9
+[INFO] 2026-11-03 09:44:08,242 polygon_api | Successfully fetched test case 9 - Input length: 209968, Output length: 7
+[INFO] 2026-11-03 09:44:08,243 polygon_api | Processing test case 10/12 (index: 10)
+[DEBUG] 2026-11-03 09:44:08,244 polygon_api | Fetching input for test case 10
+[DEBUG] 2026-11-03 09:44:11,525 polygon_api | Fetching output for test case 10
+[INFO] 2026-11-03 09:44:12,233 polygon_api | Successfully fetched test case 10 - Input length: 469410, Output length: 7
+[INFO] 2026-11-03 09:44:12,235 polygon_api | Processing test case 11/12 (index: 11)
+[DEBUG] 2026-11-03 09:44:12,236 polygon_api | Fetching input for test case 11
+[DEBUG] 2026-11-03 09:44:15,112 polygon_api | Fetching output for test case 11
+[INFO] 2026-11-03 09:44:16,225 polygon_api | Successfully fetched test case 11 - Input length: 770633, Output length: 7
+[INFO] 2026-11-03 09:44:16,225 polygon_api | Processing test case 12/12 (index: 12)
+[DEBUG] 2026-11-03 09:44:16,225 polygon_api | Fetching input for test case 12
+[INFO] 2026-11-03 09:44:27,556 views | Entered index view with method=GET
+[INFO] 2026-11-03 09:44:27,568 views | Exiting index view
+[INFO] 2026-11-03 09:44:30,537 views | Entered index view with method=POST
+[DEBUG] 2026-11-03 09:44:30,544 views | POST data: polygon_id=621599, migrate_to_azure=None, migrate_to_db=None, migrate_test_cases_to_db=None, difficulty=, selected_tags=[], new_tag=
+[DEBUG] 2026-11-03 09:44:30,544 views | All POST data: {'csrfmiddlewaretoken': ['GY88Gn3IZIypFOCcsy2F0UlpY1bV6050orXj97QlHkkDduIzKVg6PykBORXKgxku'], 'problem_id': ['621599']}
+[INFO] 2026-11-03 09:44:30,545 views | Processing polygon_id=621599
+[DEBUG] 2026-11-03 09:44:30,558 views | db_problem=None
+[INFO] 2026-11-03 09:44:30,559 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-03 09:44:31,207 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-11-03 09:44:31,207 views | Polygon problem info: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-03 09:44:31,207 polygon_api | Downloading package for problem 621599
+[INFO] 2026-11-03 09:44:31,209 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-03 09:44:31,993 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-03 09:44:36,644 polygon_api | Successfully read problem.html content, length: 2283 characters
+[DEBUG] 2026-11-03 09:44:36,810 polygon_api | Cleaned up temporary directory: C:\Users\Nivi\AppData\Local\Temp\tmpyawwws8t
+[DEBUG] 2026-11-03 09:44:36,814 views | Downloaded and extracted problem_html_content, length: 2283
+[INFO] 2026-11-03 09:44:36,815 views | Entered parse_problem_html with content length=2283
+[DEBUG] 2026-11-03 09:44:36,818 views | Extracted title=Even Pair Sums, legend length=231, input_format length=264, output_format length=91
+[INFO] 2026-11-03 09:44:36,818 views | Exiting parse_problem_html
+[DEBUG] 2026-11-03 09:44:36,818 views | Parsed html_data: {'title': 'Even Pair Sums', 'legend': '<p>You are given an array $$$A$$$ consisting of $$$N$$$ integers. Your task is to find the number of pairs of adjacent elements $$$(A_i, A_{i+1})$$$ (for $$$1 \\le i  \\lt  N$$$) whose sum ($$$A_i + A_{i+1}$$$) is an even number.</p>', 'input_format': '<p>The first line contains a single integer $$$N$$$ ($$$2 \\le N \\le 10^5$$$) — the number of elements in the array. The second line contains $$$N$$$ space-separated integers $$$A_1, A_2, \\dots, A_N$$$ ($$$-10^9 \\le A_i \\le 10^9$$$) — the elements of the array.</p>', 'output_format': '<p>Output a single integer representing the number of adjacent pairs whose sum is even.</p>', 'notes': '<p>For the first sample, the adjacent sums are: — $$$1 + 3 = 4$$$ (even) — $$$3 + 5 = 8$$$ (even) — $$$5 + 7 = 12$$$ (even) Total count is 3.</p>'}
+[INFO] 2026-11-03 09:44:36,819 polygon_api | Fetching all test cases for 621599, testset
+[INFO] 2026-11-03 09:44:37,590 polygon_api | Found 12 test cases to process
+[INFO] 2026-11-03 09:44:37,592 polygon_api | Processing test case 1/12 (index: 1)
+[DEBUG] 2026-11-03 09:44:37,593 polygon_api | Fetching input for test case 1
+[DEBUG] 2026-11-03 09:44:38,314 polygon_api | Fetching output for test case 1
+[INFO] 2026-11-03 09:44:39,137 polygon_api | Successfully fetched test case 1 - Input length: 13, Output length: 3
+[INFO] 2026-11-03 09:44:39,137 polygon_api | Processing test case 2/12 (index: 2)
+[DEBUG] 2026-11-03 09:44:39,138 polygon_api | Fetching input for test case 2
+[DEBUG] 2026-11-03 09:45:01,075 polygon_api | Fetching output for test case 2
+[INFO] 2026-11-03 09:45:22,783 polygon_api | Successfully fetched test case 2 - Input length: 21, Output length: 3
+[INFO] 2026-11-03 09:45:22,789 polygon_api | Processing test case 3/12 (index: 3)
+[DEBUG] 2026-11-03 09:45:22,789 polygon_api | Fetching input for test case 3
+[DEBUG] 2026-11-03 09:45:23,707 polygon_api | Fetching output for test case 3
+[INFO] 2026-11-03 09:45:24,627 polygon_api | Successfully fetched test case 3 - Input length: 13, Output length: 3
+[INFO] 2026-11-03 09:45:24,628 polygon_api | Processing test case 4/12 (index: 4)
+[DEBUG] 2026-11-03 09:45:24,629 polygon_api | Fetching input for test case 4
+[DEBUG] 2026-11-03 09:45:25,656 polygon_api | Fetching output for test case 4
+[INFO] 2026-11-03 09:45:26,674 polygon_api | Successfully fetched test case 4 - Input length: 38, Output length: 3
+[INFO] 2026-11-03 09:45:26,675 polygon_api | Processing test case 5/12 (index: 5)
+[DEBUG] 2026-11-03 09:45:26,676 polygon_api | Fetching input for test case 5
+[DEBUG] 2026-11-03 09:45:27,597 polygon_api | Fetching output for test case 5
+[INFO] 2026-11-03 09:45:28,518 polygon_api | Successfully fetched test case 5 - Input length: 438, Output length: 4
+[INFO] 2026-11-03 09:45:28,520 polygon_api | Processing test case 6/12 (index: 6)
+[DEBUG] 2026-11-03 09:45:28,521 polygon_api | Fetching input for test case 6
+[DEBUG] 2026-11-03 09:45:29,441 polygon_api | Fetching output for test case 6
+[INFO] 2026-11-03 09:45:30,258 polygon_api | Successfully fetched test case 6 - Input length: 5410, Output length: 5
+[INFO] 2026-11-03 09:45:30,259 polygon_api | Processing test case 7/12 (index: 7)
+[DEBUG] 2026-11-03 09:45:30,259 polygon_api | Fetching input for test case 7
+[DEBUG] 2026-11-03 09:45:31,099 polygon_api | Fetching output for test case 7
+[INFO] 2026-11-03 09:45:32,205 polygon_api | Successfully fetched test case 7 - Input length: 31937, Output length: 6
+[INFO] 2026-11-03 09:45:32,206 polygon_api | Processing test case 8/12 (index: 8)
+[DEBUG] 2026-11-03 09:45:32,206 polygon_api | Fetching input for test case 8
+[DEBUG] 2026-11-03 09:45:33,235 polygon_api | Fetching output for test case 8
+[INFO] 2026-11-03 09:45:34,150 polygon_api | Successfully fetched test case 8 - Input length: 73859, Output length: 6
+[INFO] 2026-11-03 09:45:34,153 polygon_api | Processing test case 9/12 (index: 9)
+[DEBUG] 2026-11-03 09:45:34,153 polygon_api | Fetching input for test case 9
+[DEBUG] 2026-11-03 09:45:35,304 polygon_api | Fetching output for test case 9
+[INFO] 2026-11-03 09:45:36,198 polygon_api | Successfully fetched test case 9 - Input length: 209968, Output length: 7
+[INFO] 2026-11-03 09:45:36,199 polygon_api | Processing test case 10/12 (index: 10)
+[DEBUG] 2026-11-03 09:45:36,199 polygon_api | Fetching input for test case 10
+[DEBUG] 2026-11-03 09:45:37,760 polygon_api | Fetching output for test case 10
+[INFO] 2026-11-03 09:45:38,656 polygon_api | Successfully fetched test case 10 - Input length: 469410, Output length: 7
+[INFO] 2026-11-03 09:45:38,657 polygon_api | Processing test case 11/12 (index: 11)
+[DEBUG] 2026-11-03 09:45:38,657 polygon_api | Fetching input for test case 11
+[DEBUG] 2026-11-03 09:45:40,119 polygon_api | Fetching output for test case 11
+[INFO] 2026-11-03 09:45:40,914 polygon_api | Successfully fetched test case 11 - Input length: 770633, Output length: 7
+[INFO] 2026-11-03 09:45:40,914 polygon_api | Processing test case 12/12 (index: 12)
+[DEBUG] 2026-11-03 09:45:40,915 polygon_api | Fetching input for test case 12
+[DEBUG] 2026-11-03 09:45:41,910 polygon_api | Fetching output for test case 12
+[INFO] 2026-11-03 09:45:42,593 polygon_api | Successfully fetched test case 12 - Input length: 1038893, Output length: 7
+[INFO] 2026-11-03 09:45:42,594 polygon_api | Completed fetching all 12 test cases for problem 621599
+[DEBUG] 2026-11-03 09:45:42,594 views | Fetched all test cases.
+[ERROR] 2026-11-03 09:45:42,595 polygon_api | Error storing test cases in Redis for polygon_id 621599: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+[DEBUG] 2026-11-03 09:45:43,232 views | checker_type=checker.cpp
+[INFO] 2026-11-03 09:45:43,233 polygon_api | Fetching custom checker info for problem 621599
+[DEBUG] 2026-11-03 09:45:43,769 polygon_api | Raw checker info: checker.cpp
+[INFO] 2026-11-03 09:45:43,769 polygon_api | Custom checker detected: {'name': 'checker.cpp', 'type': 'custom'}
+[INFO] 2026-11-03 09:45:43,769 polygon_api | Fetching test cases for 621599, testset
+[DEBUG] 2026-11-03 09:45:44,513 views | test_case_count=12
+[INFO] 2026-11-03 09:45:44,514 views | Exiting index view
+[INFO] 2026-11-03 10:32:55,043 views | Entered index view with method=GET
+[INFO] 2026-11-03 10:32:55,059 views | Exiting index view
+[INFO] 2026-11-03 10:48:45,427 views | Entered index view with method=POST
+[DEBUG] 2026-11-03 10:48:45,442 views | POST data: polygon_id=621599, migrate_to_azure=None, migrate_to_db=None, migrate_test_cases_to_db=None, difficulty=, selected_tags=[], new_tag=
+[DEBUG] 2026-11-03 10:48:45,444 views | All POST data: {'csrfmiddlewaretoken': ['s4XrOOxxPq3hRbvJuoFWxSv18Frv0KpKaxMChykax2PvpRB6MLTnmwudYvdkahEe'], 'problem_id': ['621599']}
+[INFO] 2026-11-03 10:48:45,444 views | Processing polygon_id=621599
+[DEBUG] 2026-11-03 10:48:45,467 views | db_problem=None
+[INFO] 2026-11-03 10:48:45,470 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-03 10:48:49,197 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-11-03 10:48:49,198 views | Polygon problem info: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-03 10:48:49,199 polygon_api | Downloading package for problem 621599
+[INFO] 2026-11-03 10:48:49,207 polygon_api | Fetching problem info for 621599
+[INFO] 2026-11-03 10:48:52,128 polygon_api | Polygon problem.info response: {'timeLimit': 1000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'runTwice': False, 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-11-03 10:49:01,756 polygon_api | Successfully read problem.html content, length: 2283 characters
+[DEBUG] 2026-11-03 10:49:01,859 polygon_api | Cleaned up temporary directory: C:\Users\Nivi\AppData\Local\Temp\tmpwzeist0u
+[DEBUG] 2026-11-03 10:49:01,885 views | Downloaded and extracted problem_html_content, length: 2283
+[INFO] 2026-11-03 10:49:01,889 views | Entered parse_problem_html with content length=2283
+[DEBUG] 2026-11-03 10:49:01,911 views | Extracted title=Even Pair Sums, legend length=231, input_format length=264, output_format length=91
+[INFO] 2026-11-03 10:49:01,918 views | Exiting parse_problem_html
+[DEBUG] 2026-11-03 10:49:01,925 views | Parsed html_data: {'title': 'Even Pair Sums', 'legend': '<p>You are given an array $$$A$$$ consisting of $$$N$$$ integers. Your task is to find the number of pairs of adjacent elements $$$(A_i, A_{i+1})$$$ (for $$$1 \\le i  \\lt  N$$$) whose sum ($$$A_i + A_{i+1}$$$) is an even number.</p>', 'input_format': '<p>The first line contains a single integer $$$N$$$ ($$$2 \\le N \\le 10^5$$$) — the number of elements in the array. The second line contains $$$N$$$ space-separated integers $$$A_1, A_2, \\dots, A_N$$$ ($$$-10^9 \\le A_i \\le 10^9$$$) — the elements of the array.</p>', 'output_format': '<p>Output a single integer representing the number of adjacent pairs whose sum is even.</p>', 'notes': '<p>For the first sample, the adjacent sums are: — $$$1 + 3 = 4$$$ (even) — $$$3 + 5 = 8$$$ (even) — $$$5 + 7 = 12$$$ (even) Total count is 3.</p>'}
+[INFO] 2026-11-03 10:49:01,931 polygon_api | Fetching all test cases for 621599, testset
+[INFO] 2026-11-03 10:49:05,787 polygon_api | Found 12 test cases to process
+[INFO] 2026-11-03 10:49:05,788 polygon_api | Processing test case 1/12 (index: 1)
+[DEBUG] 2026-11-03 10:49:05,788 polygon_api | Fetching input for test case 1
+[DEBUG] 2026-11-03 10:49:08,864 polygon_api | Fetching output for test case 1
+[INFO] 2026-11-03 10:49:12,678 polygon_api | Successfully fetched test case 1 - Input length: 13, Output length: 3
+[INFO] 2026-11-03 10:49:12,678 polygon_api | Processing test case 2/12 (index: 2)
+[DEBUG] 2026-11-03 10:49:12,679 polygon_api | Fetching input for test case 2
+[DEBUG] 2026-11-03 10:49:16,096 polygon_api | Fetching output for test case 2
+[INFO] 2026-11-03 10:49:18,933 polygon_api | Successfully fetched test case 2 - Input length: 21, Output length: 3
+[INFO] 2026-11-03 10:49:18,935 polygon_api | Processing test case 3/12 (index: 3)
+[DEBUG] 2026-11-03 10:49:18,935 polygon_api | Fetching input for test case 3
+[DEBUG] 2026-11-03 10:49:22,218 polygon_api | Fetching output for test case 3
+[INFO] 2026-11-03 10:49:25,744 polygon_api | Successfully fetched test case 3 - Input length: 13, Output length: 3
+[INFO] 2026-11-03 10:49:25,746 polygon_api | Processing test case 4/12 (index: 4)
+[DEBUG] 2026-11-03 10:49:25,748 polygon_api | Fetching input for test case 4
+[DEBUG] 2026-11-03 10:49:29,337 polygon_api | Fetching output for test case 4
+[INFO] 2026-11-03 10:49:51,282 polygon_api | Successfully fetched test case 4 - Input length: 38, Output length: 3
+[INFO] 2026-11-03 10:49:51,283 polygon_api | Processing test case 5/12 (index: 5)
+[DEBUG] 2026-11-03 10:49:51,284 polygon_api | Fetching input for test case 5
+[DEBUG] 2026-11-03 10:49:52,604 polygon_api | Fetching output for test case 5
+[INFO] 2026-11-03 10:50:16,178 polygon_api | Successfully fetched test case 5 - Input length: 438, Output length: 4
+[INFO] 2026-11-03 10:50:16,178 polygon_api | Processing test case 6/12 (index: 6)
+[DEBUG] 2026-11-03 10:50:16,179 polygon_api | Fetching input for test case 6
+[DEBUG] 2026-11-03 10:50:18,983 polygon_api | Fetching output for test case 6
+[INFO] 2026-11-03 10:50:22,485 polygon_api | Successfully fetched test case 6 - Input length: 5410, Output length: 5
+[INFO] 2026-11-03 10:50:22,485 polygon_api | Processing test case 7/12 (index: 7)
+[DEBUG] 2026-11-03 10:50:22,488 polygon_api | Fetching input for test case 7
+[DEBUG] 2026-11-03 10:50:35,620 polygon_api | Fetching output for test case 7
+[INFO] 2026-11-03 10:50:39,426 polygon_api | Successfully fetched test case 7 - Input length: 31937, Output length: 6
+[INFO] 2026-11-03 10:50:39,445 polygon_api | Processing test case 8/12 (index: 8)
+[DEBUG] 2026-11-03 10:50:39,446 polygon_api | Fetching input for test case 8
+[DEBUG] 2026-11-03 10:50:42,976 polygon_api | Fetching output for test case 8
+[INFO] 2026-11-03 10:50:43,935 polygon_api | Successfully fetched test case 8 - Input length: 73859, Output length: 6
+[INFO] 2026-11-03 10:50:43,940 polygon_api | Processing test case 9/12 (index: 9)
+[DEBUG] 2026-11-03 10:50:43,943 polygon_api | Fetching input for test case 9
+[DEBUG] 2026-11-03 10:50:45,173 polygon_api | Fetching output for test case 9
+[INFO] 2026-11-03 10:50:46,125 polygon_api | Successfully fetched test case 9 - Input length: 209968, Output length: 7
+[INFO] 2026-11-03 10:50:46,125 polygon_api | Processing test case 10/12 (index: 10)
+[DEBUG] 2026-11-03 10:50:46,125 polygon_api | Fetching input for test case 10
+[DEBUG] 2026-11-03 10:50:47,606 polygon_api | Fetching output for test case 10
+[INFO] 2026-11-03 10:50:48,827 polygon_api | Successfully fetched test case 10 - Input length: 469410, Output length: 7
+[INFO] 2026-11-03 10:50:48,830 polygon_api | Processing test case 11/12 (index: 11)
+[DEBUG] 2026-11-03 10:50:48,831 polygon_api | Fetching input for test case 11
+[DEBUG] 2026-11-03 10:50:51,358 polygon_api | Fetching output for test case 11
+[INFO] 2026-11-03 10:50:52,278 polygon_api | Successfully fetched test case 11 - Input length: 770633, Output length: 7
+[INFO] 2026-11-03 10:50:52,278 polygon_api | Processing test case 12/12 (index: 12)
+[DEBUG] 2026-11-03 10:50:52,280 polygon_api | Fetching input for test case 12
+[DEBUG] 2026-11-03 10:50:54,433 polygon_api | Fetching output for test case 12
+[INFO] 2026-11-03 10:50:55,825 polygon_api | Successfully fetched test case 12 - Input length: 1038893, Output length: 7
+[INFO] 2026-11-03 10:50:55,826 polygon_api | Completed fetching all 12 test cases for problem 621599
+[DEBUG] 2026-11-03 10:50:55,826 views | Fetched all test cases.
+[ERROR] 2026-11-03 10:50:55,830 polygon_api | Error storing test cases in Redis for polygon_id 621599: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+[DEBUG] 2026-11-03 10:50:56,613 views | checker_type=checker.cpp
+[INFO] 2026-11-03 10:50:56,613 polygon_api | Fetching custom checker info for problem 621599
+[DEBUG] 2026-11-03 10:50:57,122 polygon_api | Raw checker info: checker.cpp
+[INFO] 2026-11-03 10:50:57,124 polygon_api | Custom checker detected: {'name': 'checker.cpp', 'type': 'custom'}
+[INFO] 2026-11-03 10:50:57,124 polygon_api | Fetching test cases for 621599, testset
+[DEBUG] 2026-11-03 10:50:57,726 views | test_case_count=12
+[INFO] 2026-11-03 10:50:57,728 views | Exiting index view
